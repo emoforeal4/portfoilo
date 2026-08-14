@@ -187,17 +187,52 @@ padding:30px 20px;
     padding:130px 0 !important;
     background:#ffb50cb0;
 }
-#services{
-    padding: 130px 0 !important;
-    background:#F8FAFC;
-} 
-#services h2{
+/* Custom Styling for Services Section */
+.services-section {
+  background-color: #f3f4fb !important;
+  padding: 140px 0;
+}
+
+.tracking-wide {
+  letter-spacing: 1px;
+}
+
+.service{
     font-size:58px;
     font-weight:800 !important;
     font-family: "Merienda", cursive;
     margin-bottom: 15px;
   text-shadow: 4px 4px 3px #00000059;
     color:#070707ec;
+}
+
+/* Service Card Hover Effect */
+.service-card {
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1) !important;
+}
+
+.service-card:hover .icon-box {
+  background-color: #0d6efd;
+}
+
+.service-card:hover .icon-box i {
+  color: #ffffff !important;
+}
+
+/* Link Hover Effect */
+.link-arrow i {
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.service-card:hover .link-arrow i {
+  transform: translateX(4px);
 }
 #skills h2{
     font-size:58px;
